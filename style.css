@@ -167,6 +167,7 @@ main > .cards-bottom {
   width: 100%;
   grid-template-columns: repeat(4, 0.2fr);
   grid-template-rows: repeat(2, 1fr);
+  padding-bottom: 3.5rem;
 }
 .card-bottom-interface {
   display: grid;
