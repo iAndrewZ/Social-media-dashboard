@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body class="dark">
+  <div class="top-background dark-top-bk"></div>
+  <main>
+    <h1>Social Media Dashboard</h1>
+    <p class="total-followers">Total Followers: 23,004</p>
+    <div class="theme-selector">
+      <p>Dark Mode</p>
+      <button class="change-theme button-dark" onclick="changeTheme(), switchAnimation()">
+        <div class="switch-component on"></div>
+      </button>
+    </div>
+    <div class="cards">
+      <div class="card-interface dark-card"> <!--FACEBOOK-->
+        <div class="top-light-facebook light-setup"></div>
+        <div class="card-logo">
+          <img src="./images/icon-facebook.svg">
+          <span>@nathanf</span>
+        </div>
+        <h2 class="numbers-of-followers">1987</h2>
+        <p class="followers-text">FOLLOWERS</p>
+        <div class="stock-info">
+          <img src="./images/icon-up.svg">
+          <span>12 Today</span>
+        </div>
+      </div>
+      <div class="card-interface dark-card">  <!--TWITTER-->
+        <div class="top-light-twitter light-setup"></div>
+        <div class="card-logo">
+          <img src="./images/icon-twitter.svg">
+          <span>@nathanf</span>
+        </div>
+        <h2 class="numbers-of-followers">1044</h2>
+        <p class="followers-text">FOLLOWERS</p>
+        <div class="stock-info">
+          <img src="./images/icon-up.svg">
+          <span>99 Today</span>
+        </div>
+      </div>
+      <div class="card-interface dark-card"> <!--INSTAGRAM-->
+        <div class="top-light-instagram light-setup"></div>
+        <div class="card-logo">
+          <img src="./images/icon-instagram.svg">
+          <span>@realnathanf</span>
+        </div>
+        <h2 class="numbers-of-followers">11K</h2>
+        <p class="followers-text">FOLLOWERS</p>
+        <div class="stock-info">
+          <img src="./images/icon-up.svg">
+          <span>1099 Today</span>
+        </div>
+      </div>
+      <div class="card-interface dark-card"> <!--YOUTUBE-->
+        <div class="top-light-youtube light-setup"></div>
+        <div class="card-logo">
+          <img src="./images/icon-youtube.svg">
+          <span>@Nathan F.</span>
+        </div>
+        <h2 class="numbers-of-followers">8239</h2>
+        <p class="followers-text">FOLLOWERS</p>
+        <div class="stock-info">
+          <img src="./images/icon-down.svg">
+          <span style="color: red">144 Today</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <h2 class="overview">Overview Today</h2>
+    <div class="cards-bottom">
+       <div class="card-bottom-interface dark-card"> <!--FACEBOOK Page views-->
+         <h2 class="card-details">Page views</h2>
+         <img src="./images/icon-facebook.svg" alt="facebookLogo" class="card-logo">
+         <p class="card-item-value">87</p>
+         <div class="stocks">
+           <img src="./images/icon-up.svg" alt="arrowUp" class="arrowImage">
+           <span class="stock-rate up">3%</span>
+         </div>
+       </div>
+       <div class="card-bottom-interface dark-card"> <!--FACEBOOK Likes-->
+        <h2 class="card-details">Likes</h2>
+        <img src="./images/icon-facebook.svg" alt="facebookLogo" class="card-logo">
+        <p class="card-item-value">52</p>
+        <div class="stocks">
+          <img src="./images/icon-down.svg" alt="arrowUp" class="arrowImage">
+          <span class="stock-rate down">2%</span>
+        </div>
+      </div>
+      <div class="card-bottom-interface dark-card"> <!--INSTAGRAM Likes-->
+        <h2 class="card-details">Likes</h2>
+        <img src="./images/icon-instagram.svg" alt="facebookLogo" class="card-logo">
+        <p class="card-item-value">5462</p>
+        <div class="stocks">
+          <img src="./images/icon-up.svg" alt="arrowUp" class="arrowImage">
+          <span class="stock-rate up">2257%</span>
+        </div>
+      </div>
+      <div class="card-bottom-interface dark-card"> <!--INSTAGRAM Profile Views-->
+        <h2 class="card-details">Profile views</h2>
+        <img src="./images/icon-instagram.svg" alt="facebookLogo" class="card-logo">
+        <p class="card-item-value">52K</p>
+        <div class="stocks">
+          <img src="./images/icon-up.svg" alt="arrowUp" class="arrowImage">
+          <span class="stock-rate up">1357%</span>
+        </div>
+      </div>
+      <div class="card-bottom-interface dark-card"> <!--Twitter retweets-->
+        <h2 class="card-details">Retweets</h2>
+        <img src="./images/icon-twitter.svg" alt="facebookLogo" class="card-logo">
+        <p class="card-item-value">117</p>
+        <div class="stocks">
+          <img src="./images/icon-up.svg" alt="arrowUp" class="arrowImage">
+          <span class="stock-rate up">303%</span>
+        </div>
+      </div>
+      <div class="card-bottom-interface dark-card"> <!--Twitter likes-->
+        <h2 class="card-details">Likes</h2>
+        <img src="./images/icon-twitter.svg" alt="facebookLogo" class="card-logo">
+        <p class="card-item-value">507</p>
+        <div class="stocks">
+          <img src="./images/icon-up.svg" alt="arrowUp" class="arrowImage">
+          <span class="stock-rate up">553%</span>
+        </div>
+      </div>
+      <div class="card-bottom-interface dark-card"> <!--YOUTUBE Likes-->
+        <h2 class="card-details">Likes</h2>
+        <img src="./images/icon-youtube.svg" alt="facebookLogo" class="card-logo">
+        <p class="card-item-value">107</p>
+        <div class="stocks">
+          <img src="./images/icon-down.svg" alt="arrowUp" class="arrowImage">
+          <span class="stock-rate down">19%</span>
+        </div>
+      </div>
+      <div class="card-bottom-interface dark-card"> <!--YOUTUBE views-->
+        <h2 class="card-details">Total views</h2>
+        <img src="./images/icon-youtube.svg" alt="facebookLogo" class="card-logo">
+        <p class="card-item-value">1407</p>
+        <div class="stocks">
+          <img src="./images/icon-down.svg" alt="arrowUp" class="arrowImage">
+          <span class="stock-rate down">12%</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
